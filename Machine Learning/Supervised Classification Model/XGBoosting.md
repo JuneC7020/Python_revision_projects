@@ -12,6 +12,14 @@ lambda = Regularization parameter \
 Calculate the similarity score for the each group \
 Calculate the Gain of the splitting the Residuals into groups\
 Gain = Left_similiarity + Right_similiarity - Root_similiarity \
-Calculate the Gain for set of groups \
+Calculate the Gain for other sets of groups using different thresholds \
+Compare the Gain of the groups and choose the one with the largest Gain \
+Then from the chosen tree split the leaves using the same method \
+4. Set gamma, if the gain of the branch is smaller than the gamma prune the branch (Don't remove the root)
+
+5. The Final tree is made!
+predicted value + learning rate * the tree
+= new predicted value \
+Then build another tree based on the new prediction with its new residual.
 
 
